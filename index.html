@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blind Test</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="amq.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=B612&family=Concert+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="content">
+            <div id="overlay" onclick="launch()">
+                <h1>Anime Blind-Test</h1>
+                <h2>Click to begin</h2>
+            </div>
+            <div id="video_spacing">
+                <video src="" id="video"></video>
+            </div>
+        </div>
+        <div class="content" id="answer_spacing">
+            <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete" style="width:300px;">
+                  <input id="answer" type="text" name="amq_answer" placeholder="Answer...">
+                </div>
+                <input type="submit" id="submit_answer">
+            </form>
+        </div>
+        <div id="sidenav">
+            <div class="sidenav">
+                <a href="about.html">About</a>
+                <a href="database.html">Anime Database</a>
+                <button class="dropdown-btn">Kitsu Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <input type="text" id="kitsu_login" placeholder="Kitsu Username..."></input>
+                </div>
+                <a href="changelogs.html">Changelogs</a>
+                
+                <input type="text" id="anime_search" placeholder="Search Anime..."></input>
+                <a id="dark-mode">
+                    <i class="fa fa-adjust"></i>
+                </a>
+            </div>
+            <button id="hide-sidebar-btn"><<</button>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="amq.js"></script>
+    <script src="test.js"></script>
+    <script src="anime_search.js"></script>
+    <script src="navebar.js"></script>
+</html>
